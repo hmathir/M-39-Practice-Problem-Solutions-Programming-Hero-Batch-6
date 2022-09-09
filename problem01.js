@@ -20,6 +20,8 @@ else{
 
 //3) Write an arrow function that will take a parameter and will check if the parameter is a number or not by using isNaN(). And return true or false.
 
+
+// Not Using isNan ( as per 39-9 Module summary and Practice Problems - 08:24 )
 const arrowFunction = (para) => {
     if(typeof(para) != 'number'){
         return false;
@@ -30,3 +32,16 @@ const arrowFunction = (para) => {
 }
 const result = arrowFunction(3);
 console.log(result);
+
+
+//Using isNaN (As per qus)
+const arrowFunction2 = (para) => {
+    if(isNaN(para)){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+const result2 = arrowFunction(3);
+console.log(result2);
